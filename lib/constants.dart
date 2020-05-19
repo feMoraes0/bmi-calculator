@@ -14,3 +14,8 @@ const kMainLabelStyle = TextStyle(
   fontSize: 50.0,
   fontWeight: FontWeight.w900,
 );
+
+const kButtonTextStyle = TextStyle(
+  fontSize: 23.0,
+  fontWeight: FontWeight.bold,
+);

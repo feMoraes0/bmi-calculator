@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/bottom_button.dart';
 import 'package:bmi_calculator/icon_content.dart';
 import 'package:bmi_calculator/reusable_card.dart';
 import 'package:bmi_calculator/rounded_icon_button.dart';
@@ -202,20 +203,11 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           SizedBox(height: 10.0),
-          GestureDetector(
-            onTap: () {
+          BottomButton(
+            buttonText: 'RESULT',
+            onPressed: () {
               Navigator.pushNamed(context, '/results-page');
             },
-            child: Container(
-              height: 80.0,
-              width: double.infinity,
-              color: kBottomContainerColour,
-              child: Center(
-                child: Text(
-                  'RESULTS',
-                ),
-              ),
-            ),
           ),
         ],
       ),
